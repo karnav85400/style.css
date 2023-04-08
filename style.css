@@ -1,0 +1,96 @@
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* header:hover {
+    background-image: url("https://lh6.googleusercontent.com/FpFdvImHXsfuWV6Rtz824VtXeNNkBBizSIrrHlSAdPhprUJm8dV9yMMciWe0x_PlFvdB-IQdAJa4BT32DnT5cA4brjUrtRKKeu7iIM7XqjyOZufEZktwcpG4SBEXSpcjSw=w1280");
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    overflow-x: auto;
+    white-space: nowrap;
+    min-width: 960px;
+}
+
+nav::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background: transparent;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 3px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navButtonStyle {
+    color: red;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 20px 25px;
+}
+
+.navButtonStyle:hover,
+.navButtonStyle:focus {
+    color: red;
+}
+
+.navimgsize {
+    height: 50px;
+    padding: 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textAfterLogo {
+    color: red;
+    font-size: 24px;
+    line-height: 100px;
+    position: absolute;
+    top: 50x;
+    left: 100px;
+}
+
+.textAfterLogo:hover:before {
+    content: "Thanks For Visiting!";
+}
+
+.textAfterLogo:hover span {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    li {
+        margin-left: 0;
+    }
+    .navButtonStyle {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+}
